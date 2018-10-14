@@ -1,0 +1,8 @@
+C:/Program Files (x86)/tinyobjloader/lib/tinyobjloader.lib
+C:/Program Files (x86)/tinyobjloader/lib/tinyobjloader/cmake/tinyobjloader-targets.cmake
+C:/Program Files (x86)/tinyobjloader/lib/tinyobjloader/cmake/tinyobjloader-targets-release.cmake
+C:/Program Files (x86)/tinyobjloader/include/tiny_obj_loader.h
+C:/Program Files (x86)/tinyobjloader/share/doc/tinyobjloader/LICENSE
+C:/Program Files (x86)/tinyobjloader/lib/tinyobjloader/cmake/tinyobjloader-config.cmake
+C:/Program Files (x86)/tinyobjloader/lib/tinyobjloader/cmake/tinyobjloader-config-version.cmake
+C:/Program Files (x86)/tinyobjloader/lib/pkgconfig/tinyobjloader.pc

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\colin\Desktop\VKRT\src\lib\tinyobjloader\CMakeFiles\11c2142199a83b0c9db67a81cc305b41\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BBC7CF2A-FDE0-31B2-8E98-516D270AD239}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

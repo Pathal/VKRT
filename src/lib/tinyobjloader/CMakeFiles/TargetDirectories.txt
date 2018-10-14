@@ -1,0 +1,4 @@
+C:/Users/colin/Desktop/VKRT/src/lib/tinyobjloader/CMakeFiles/tinyobjloader.dir
+C:/Users/colin/Desktop/VKRT/src/lib/tinyobjloader/CMakeFiles/INSTALL.dir
+C:/Users/colin/Desktop/VKRT/src/lib/tinyobjloader/CMakeFiles/ALL_BUILD.dir
+C:/Users/colin/Desktop/VKRT/src/lib/tinyobjloader/CMakeFiles/ZERO_CHECK.dir
