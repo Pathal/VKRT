@@ -1,8 +1,7 @@
-#define STB_IMAGE_IMPLEMENTATION
-//#include "lib/stb/stb.h"
-#include "lib/stb/stb_image.h"
 #define TINYOBJLOADER_IMPLEMENTATION
 #include "lib/tinyobjloader/tiny_obj_loader.h"
+#define STB_IMAGE_IMPLEMENTATION
+#include "lib/stb/stb_image.h"
 
 #include "VulkanRenderer.h"
 #include "Resources.h"

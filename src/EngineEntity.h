@@ -25,10 +25,12 @@ public:
 	bool drawEntity();
 
 	void setAssetPaths(std::string s);
+	std::string getTexturePath() { return texture_path; }
+	std::string getModelPath() { return model_path; }
 	void loadAssets();
 	void markAssetsLoaded();
 
-	glm::mat4 getTransformation() { return  translate_mat * scale_mat * rotate_mat; }
+	glm::mat4 getTransformation() { return translate_mat * scale_mat * rotate_mat; }
 	void setTranslate(glm::mat4 m) { translate_mat = m; }
 	void setRotate(glm::mat4 m) { rotate_mat = m; }
 	void setScale(glm::mat4 m) { scale_mat = m; }

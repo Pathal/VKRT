@@ -12,6 +12,7 @@ private:
 	//renderer reference here
 	//Renderer* render;
 public:
+	void run(); //MUST BE IMPLEMENTED BY EACH RENDERER
 	Camera* getCamera() { return cam; };
 	EngineEntity* getEntity(int i) { return entities.at(i); }
 	std::vector<EngineEntity*>* getEntitiesList() { return &entities; }

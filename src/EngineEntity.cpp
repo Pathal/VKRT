@@ -1,11 +1,14 @@
 #include "EngineEntity.h"
 
+//#define STB_IMAGE_IMPLEMENTATION
+//#include "lib/stb/stb_image.h"
+
 void loadAssetsThread(EngineEntity* e) {
 	//load obj
 	//load texture
 	int texWidth, texHeight, texChannels;
+	//stbi_uc* pixels = stbi_load(e->getTexturePath().c_str(), &texWidth, &texHeight, &texChannels, STBI_rgb_alpha);
 	/*
-	stbi_uc* pixels = stbi_load(TEXTURE_PATH.c_str(), &texWidth, &texHeight, &texChannels, STBI_rgb_alpha);
 	VkDeviceSize imageSize = texWidth * texHeight * 4;
 	mipLevels = static_cast<uint32_t>(std::floor(std::log2(std::max(texWidth, texHeight)))) + 1;
 

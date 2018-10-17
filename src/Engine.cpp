@@ -1,5 +1,9 @@
 #include "Engine.h"
 
+void Engine::run() {
+	return;
+}
+
 Engine::Engine() {
 	cam = new Camera();
 }

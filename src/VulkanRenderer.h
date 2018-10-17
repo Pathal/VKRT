@@ -33,6 +33,7 @@
 #include <unordered_map> //for hash<glm::vec3>
 
 #include "Resources.h"
+#include "Renderer.h"
 
 const std::string MODEL_PATH = "models/chalet.obj";
 //const std::string MODEL_PATH = "models/Chinese House.obj";
