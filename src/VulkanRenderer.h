@@ -2,7 +2,8 @@
 
 #define GLFW_INCLUDE_VULKAN
 #define VK_USE_PLATFORM_WIN32_KHR
-#include <GLFW/glfw3.h>
+#include "lib/glfw/glfw3.h"
+//#include <GLFW/glfw3.h>
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -211,8 +212,8 @@ private:
 	glm::vec3 camLookAt = glm::vec3(0.0, 0.0, 0.0);
 	glm::vec3 camUp = glm::vec3(0.0, 0.0, 1.0);
 	const glm::vec3 upwards = glm::vec3(0.0, 0.0, 1.0);
-	float camSpeed = 0.01f; //uses in game "coordinates and units"
-	int camSpeedSensitivity = 2; //multiplies the speed
+	float camSpeed = 1.0f; //uses in game "coordinates and units"
+	int camSpeedSensitivity = 7; //multiplies the speed
 
 	//methods
 	void createTextureImage();
@@ -224,8 +225,8 @@ private:
 	void updateCameraDetails(double frame_length) {
 		double xpos, ypos;
 		glfwGetCursorPos(window, &xpos, &ypos);
-		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-		glfwSetCursorPos(window, NULL, NULL);
+		//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+		//glfwSetCursorPos(window, NULL, NULL);
 		float cam_vturn_coeff = 200.0;
 		float cam_hturn_coeff = 200.0;
 
@@ -242,10 +243,10 @@ private:
 
 		In doing this, the camera will always remain "up" (sans some edge case vectors)
 		*/
-#define MOUSE_MAX_TURN_VALUE 500.
-		if(xpos > MOUSE_MAX_TURN_VALUE) { xpos = MOUSE_MAX_TURN_VALUE; }
+#define MOUSE_MAX_TURN_VALUE 1000.
+		if(xpos >  MOUSE_MAX_TURN_VALUE) { xpos =  MOUSE_MAX_TURN_VALUE; }
 		if(xpos < -MOUSE_MAX_TURN_VALUE) { xpos = -MOUSE_MAX_TURN_VALUE; }
-		if(ypos > MOUSE_MAX_TURN_VALUE) { ypos = MOUSE_MAX_TURN_VALUE; }
+		if(ypos >  MOUSE_MAX_TURN_VALUE) { ypos =  MOUSE_MAX_TURN_VALUE; }
 		if(ypos < -MOUSE_MAX_TURN_VALUE) { ypos = -MOUSE_MAX_TURN_VALUE; }
 
 		//following C-style casts are to suppress compiler warnings

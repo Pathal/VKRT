@@ -2,7 +2,7 @@
 
 #define GLFW_INCLUDE_VULKAN
 #define VK_USE_PLATFORM_WIN32_KHR
-#include <GLFW/glfw3.h>
+#include "lib/glfw/glfw3.h"
 
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -25,8 +25,8 @@ private:
 	glm::vec3 entity_offset; //floating value, hovers at entity_offset_range length
 	float entity_offset_range;
 
-	float camera_speed = 0.002;
-	int camera_rotation_sensitivity = 2;
+	float camera_speed = 100;
+	int camera_rotation_sensitivity = 7;
 
 	void rotateCamera(GLFWwindow* window); //used by updateCameraMovements() only for now
 public:

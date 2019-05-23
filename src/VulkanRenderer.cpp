@@ -69,20 +69,22 @@ void VulkanRenderer::run() {
 	long frame_sleep = 0;
 	std::string window_title = "Vulkan Win";
 	while(!glfwWindowShouldClose(window) && !quit_flag) {
-		frame_length = glfwGetTime() - frame_time;
+		double new_time = glfwGetTime();
+		frame_length = new_time - frame_time;
 		frame_rate = 1.0 / frame_length;
-		frame_time = glfwGetTime();
+		frame_time = new_time;
 		updateFrameTimeHistory(frame_time);
 		//determine frame delay (prevents 60k framerates)
 		frame_sleep = (1.0 / target_frame_rate) * 1000 - frame_length * 1000;
-		std::this_thread::sleep_for(std::chrono::milliseconds(frame_sleep));
+		//std::this_thread::sleep_for(std::chrono::milliseconds(frame_sleep));
+		std::this_thread::sleep_for(std::chrono::nanoseconds(frame_sleep*1000*1000));
 
-		window_title = "Vulkan Win (" + std::to_string(frame_rate) + "fps - " + std::to_string(getRollingFrameRate()) + ")";
+		window_title = "Vulkan Win (" + std::to_string((int)frame_rate) + "fps - " + std::to_string(getRollingFrameRate()) + ")";
 
 		glfwSetWindowTitle(window, window_title.c_str());
 		glfwPollEvents();
 		//updateUnitMovements();
-		updateCameraDetails(frame_length);
+		//updateCameraDetails(frame_length);
 		drawFrame();
 	}
 	vkDeviceWaitIdle(device);

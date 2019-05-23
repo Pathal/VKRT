@@ -11,6 +11,8 @@ private:
 	std::vector<EngineEntity*> entities;
 	//renderer reference here
 	//Renderer* render;
+protected:
+	bool dataOverlay;
 public:
 	void run(); //MUST BE IMPLEMENTED BY EACH RENDERER
 	Camera* getCamera() { return cam; };

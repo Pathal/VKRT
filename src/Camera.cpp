@@ -9,22 +9,22 @@ void Camera::rotateCamera(GLFWwindow* window) {
 	glfwGetCursorPos(window, &x, &y);
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetCursorPos(window, NULL, NULL);
-	float cam_vturn_coeff = 200.0;
-	float cam_hturn_coeff = 200.0;
+	float cam_vturn_coeff = 100.0;
+	float cam_hturn_coeff = 100.0;
 
 	glm::vec3 camera_direction = glm::normalize(lookAt - center);
 	glm::vec3 camera_axis = glm::cross(camera_direction, upwards);
 	glm::vec3 tmpCamUp = glm::cross(camera_axis, camera_direction);
 
-#define MOUSE_MAX_TURN_VALUE 500.
+#define MOUSE_MAX_TURN_VALUE 1000.
 	if(x >  MOUSE_MAX_TURN_VALUE) { x =  MOUSE_MAX_TURN_VALUE; }
 	if(x < -MOUSE_MAX_TURN_VALUE) { x = -MOUSE_MAX_TURN_VALUE; }
 	if(y >  MOUSE_MAX_TURN_VALUE) { y =  MOUSE_MAX_TURN_VALUE; }
 	if(y < -MOUSE_MAX_TURN_VALUE) { y = -MOUSE_MAX_TURN_VALUE; }
 
 	//following C-style casts are to suppress compiler warnings
-	float xAngle = (float)glm::radians(camera_rotation_sensitivity * x / MOUSE_MAX_TURN_VALUE);
-	float yAngle = (float)glm::radians(camera_rotation_sensitivity * y / MOUSE_MAX_TURN_VALUE);
+	float xAngle = (float)glm::radians(100000 * camera_rotation_sensitivity * x / MOUSE_MAX_TURN_VALUE);
+	float yAngle = (float)glm::radians(100000 * camera_rotation_sensitivity * y / MOUSE_MAX_TURN_VALUE);
 	camera_direction = glm::rotate(camera_direction, -xAngle, tmpCamUp);
 	camera_direction = glm::rotate(camera_direction, -yAngle, camera_axis);
 	//Now update the axis and such
@@ -120,10 +120,10 @@ void Camera::setFreeCam(bool v) {
 
 bool Camera::toggleFreeCam() {
 	if(free) {
-		free = false;
+		free = !free;
 		return false;
 	}
-	free = true;
+	free = !free;
 	return true;
 }
 
