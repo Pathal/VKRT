@@ -84,7 +84,7 @@ void VulkanRenderer::run() {
 		glfwSetWindowTitle(window, window_title.c_str());
 		glfwPollEvents();
 		//updateUnitMovements();
-		//updateCameraDetails(frame_length);
+		updateCameraDetails(frame_length);
 		drawFrame();
 	}
 	vkDeviceWaitIdle(device);

@@ -225,8 +225,8 @@ private:
 	void updateCameraDetails(double frame_length) {
 		double xpos, ypos;
 		glfwGetCursorPos(window, &xpos, &ypos);
-		//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-		//glfwSetCursorPos(window, NULL, NULL);
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+		glfwSetCursorPos(window, NULL, NULL);
 		float cam_vturn_coeff = 200.0;
 		float cam_hturn_coeff = 200.0;
 
