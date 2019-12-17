@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{e958acf6-8352-41d1-8cea-a29d3595bb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\imgui">
+      <UniqueIdentifier>{b85b3440-8cce-49df-8e91-9d50d3c9ad7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib">
+      <UniqueIdentifier>{3fb13544-6afd-41eb-ad64-0c754e3bd172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\imgui">
+      <UniqueIdentifier>{9f1da1c4-18ab-4dca-9623-ab6818fad239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lib\assimp">
+      <UniqueIdentifier>{a066f85d-8227-4b76-b473-551348cc3ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib\assimp">
+      <UniqueIdentifier>{e529ce09-2f48-433e-9bb2-980ddf8d8452}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\VulkanRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\imgui\imgui.cpp">
+      <Filter>Source Files\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\imgui\imgui_demo.cpp">
+      <Filter>Source Files\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\imgui\imgui_draw.cpp">
+      <Filter>Source Files\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\lib\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\VulkanRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\imgui\imgui.h">
+      <Filter>Header Files\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\imgui\imconfig.h">
+      <Filter>Header Files\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\imgui\imgui_internal.h">
+      <Filter>Header Files\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\imgui\imstb_rectpack.h">
+      <Filter>Header Files\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\imgui\imstb_textedit.h">
+      <Filter>Header Files\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\imgui\imstb_truetype.h">
+      <Filter>Header Files\lib\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\ai_assert.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\anim.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\camera.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\cexport.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\cfileio.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\cimport.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\color4.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\config.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\DefaultLogger.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\defs.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\Exporter.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\Importer.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\importerdesc.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\IOStream.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\IOSystem.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\light.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\Logger.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\LogStream.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\material.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\matrix3x3.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\matrix4x4.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\mesh.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\metadata.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\NullLogger.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\postprocess.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\ProgressHandler.hpp">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\quaternion.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\scene.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\texture.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\types.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\vector2.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\vector3.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\assimp\version.h">
+      <Filter>Header Files\lib\assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\lib\assimp\material.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="src\lib\assimp\matrix3x3.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="src\lib\assimp\matrix4x4.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="src\lib\assimp\quaternion.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="src\lib\assimp\vector2.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="src\lib\assimp\vector3.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="src\lib\assimp\color4.inl">
+      <Filter>Source Files\lib\assimp</Filter>
+    </None>
+    <None Include="env\shaders\raster\phong.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="env\shaders\raster\phong.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="env\shaders\raster\starsphere.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="env\shaders\raster\starsphere.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="env\shaders\UI\uioverlay.frag">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="env\shaders\UI\uioverlay.vert">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
